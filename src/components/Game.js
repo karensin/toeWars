@@ -53,6 +53,15 @@ class Game extends Component {
         });
     }
 
+    handleBoardRestart = () => {
+        this.setState({
+            history: [{
+                squares: Array(9).fill(null)
+            }],
+            xIsNext: true
+        })
+    }
+
     render() {
         const history = this.state.history;
         const current = history[history.length - 1];
@@ -61,13 +70,17 @@ class Game extends Component {
         let status;
         if (winner) {
             status = winner + " is our winner !";
-        } else {
+        } else if (history.length === 10) {
+            status = "No winner"
+        }
+        else {
             status = " Next player : " + (this.state.xIsNext ? 'X' : 'O');
         }
 
         return (
             <div >
                 <div className="redGlow status">{status}</div>
+                <button className="btn" onClick={this.handleBoardRestart}>Start new game</button>
                 <main className="game-board  ">
 
                     <Board
