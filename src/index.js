@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { BrowserRouter } from 'react-router-dom';
 import { Route, Link } from 'react-router-dom';
-import Main from './components/Main.js';
 
 
 
