@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/toeWars/static/css/main.5162be38.chunk.css",
+    "main.js": "/toeWars/static/js/main.52b66ce1.chunk.js",
+    "main.js.map": "/toeWars/static/js/main.52b66ce1.chunk.js.map",
+    "runtime-main.js": "/toeWars/static/js/runtime-main.b9d7a79f.js",
+    "runtime-main.js.map": "/toeWars/static/js/runtime-main.b9d7a79f.js.map",
+    "static/css/2.17e5ed98.chunk.css": "/toeWars/static/css/2.17e5ed98.chunk.css",
+    "static/js/2.46f6512b.chunk.js": "/toeWars/static/js/2.46f6512b.chunk.js",
+    "static/js/2.46f6512b.chunk.js.map": "/toeWars/static/js/2.46f6512b.chunk.js.map",
+    "index.html": "/toeWars/index.html",
+    "precache-manifest.cbeab89af3ebfa96edd20f1c0443bf25.js": "/toeWars/precache-manifest.cbeab89af3ebfa96edd20f1c0443bf25.js",
+    "service-worker.js": "/toeWars/service-worker.js",
+    "static/css/2.17e5ed98.chunk.css.map": "/toeWars/static/css/2.17e5ed98.chunk.css.map",
+    "static/css/main.5162be38.chunk.css.map": "/toeWars/static/css/main.5162be38.chunk.css.map",
+    "static/js/2.46f6512b.chunk.js.LICENSE": "/toeWars/static/js/2.46f6512b.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b9d7a79f.js",
+    "static/css/2.17e5ed98.chunk.css",
+    "static/js/2.46f6512b.chunk.js",
+    "static/css/main.5162be38.chunk.css",
+    "static/js/main.52b66ce1.chunk.js"
+  ]
+}
