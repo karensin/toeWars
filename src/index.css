@@ -5,7 +5,7 @@ html {
 
 button.square {
     color: white;
-    font-size: 60px;
+    font-size: 70pt;
     border-radius: 20px;
     border-width: thick;
     background-color: black;
@@ -158,14 +158,15 @@ p {
     transform-origin: 50% 100%;
     text-align: justify;
     position: absolute;
-    margin-left: -9em;
     font-weight: bold;
     overflow: hidden;
     font-size: 350%;
     height: 50em;
     width: 18em;
+    width: 100%;
     bottom: 0;
-    left: 50%;
+    left: 0;
+    /* left: 50%; */
 }
 
 #board:after {

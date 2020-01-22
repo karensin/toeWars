@@ -10,7 +10,7 @@ class Intro extends Component {
 
     render() {
         return (
-            <header className="d-inline-block" >
+            <header >
                 <Container className="intro h-75 d-flex align-self-center"  >
 
                     <h1 className="middle align-self-center">  A long time ago, in a galaxy far, <br />far away....
