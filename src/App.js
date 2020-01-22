@@ -21,7 +21,7 @@ class App extends Component {
                 }} >
                     <img className="starwarsImg" Src={process.env.PUBLIC_URL + "/img/starwars.png"} />
                     <div className=" center ">
-                        <a href="#game" className="btn btn-lg btn-outline-warning "> Click to play </a>
+                        <a href="#game" className="start btn btn-lg btn-outline-warning "> Click to play </a>
                     </div>
                     <Container className="filler h-100 align-items-center ">
                         <Intro />
@@ -31,7 +31,7 @@ class App extends Component {
                     background: `url("${process.env.PUBLIC_URL + '/img/background.jpg'}") no-repeat center / cover`
                 }}>
 
-                    <section className="gameSection h-100 w-100 align-items-center " id="game">
+                    <section className="gameSection align-items-center " id="game">
 
                         <Container className="filler h-100 w-100  justify-content-start">
                             <Game />

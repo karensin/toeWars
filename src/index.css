@@ -7,7 +7,7 @@
 button.square {
    
   color: white;
-  font-size: 50pt;
+  font-size: 60px;
   border-radius: 20px ;
   border-width: thick;
   background-color: black;
@@ -102,7 +102,7 @@ body {
 .intro {
     top: 30%;
     z-index: 1;
-    animation: intro 5s ease-out 1s;
+    animation: intro 2s ease-out 1s;
     color: rgb(75, 213, 238);
     font-size: 18pt;
     font-weight: lighter;
@@ -195,7 +195,7 @@ p {
 
 /* Set the scrolling animation and position it */
 #content {
-  animation: scroll 130s linear 16s;
+  animation: scroll 130s linear 3s;
   position: absolute;
   top: 100%;
   
@@ -263,8 +263,8 @@ p {
 }
 
 .glow{
-  border-width: thick;
-}
+  width: 500px;
+ }
 
 .status{
   padding-left: 7%;
@@ -283,3 +283,29 @@ p {
   padding-top: 10px;
   
  }
+ .restart{
+  color: white;
+ 
+ }
+
+ .yellowGlow {
+  font-size: 38pt;
+  color: #fff;
+  -webkit-animation: yellowGlow 1s ease-in-out infinite alternate;
+  -moz-animation: yellowGlow ease-in-out infinite alternate;
+  animation:  yellowGlow ease-in-out infinite alternate;
+}
+@keyframes yellowGlow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffed4d, 0 0 40px #ffed4d, 0 0 50px #ffed4d, 0 0 60px #ffed4d, 0 0 70px #ffed4d;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ffed4d, 0 0 40px #e7d468, 0 0 50px #e7d468, 0 0 60px #e7d468, 0 0 70px #e7d468, 0 0 80px #e7d468;
+  }
+}
+
+.start{
+  position: relative;
+  z-index: 1; 
+}

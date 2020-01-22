@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css';
 import Board from './Board.js';
 import Intro from './Intro.js';
-
+import Button from 'react-bootstrap/Button';
 
 function calculateWinner(squares) {
     const lines = [
@@ -79,8 +79,10 @@ class Game extends Component {
 
         return (
             <div >
-                <div className="redGlow status">{status}</div>
-                <button className="btn" onClick={this.handleBoardRestart}>Start new game</button>
+
+                <div className="yellowGlow status pr-4" >{status}
+                    <Button className="btn restart ywGlow" variant="success" onClick={this.handleBoardRestart}>Start new game</Button>
+                </div>
                 <main className="game-board  ">
 
                     <Board
