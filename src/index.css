@@ -8,7 +8,7 @@ button.square {
    
   color: white;
   font-size: 50pt;
-  border-radius: 10px ;
+  border-radius: 20px ;
   border-width: thick;
   background-color: black;
 }
@@ -60,8 +60,6 @@ button.square {
   }
   
   .square {
-    
-    opacity: 90%;
     border: 1px solid #999;
     float: left;
     font-size: 28pt;
