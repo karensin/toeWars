@@ -1,65 +1,21 @@
- 
-   html {
+html {
     height: 100%;
-    overflow-y: scroll; 
-  }
- 
-button.square {
-   
-  color: white;
-  font-size: 60px;
-  border-radius: 20px ;
-  border-width: thick;
-  background-color: black;
-}
-
-
- .square  {
-  color: #fff;
-  -webkit-animation:square 1s ease-in-out infinite alternate;
-  -moz-animation: square 1s ease-in-out infinite alternate;
-  animation:  square 1s ease-in-out infinite alternate;
-}
-
-@keyframes square  {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1336a8, 0 0 40px #1336a8, 0 0 50px #1336a8, 0 0 60px #1336a8, 0 0 70px #1336a8;
-  }
-  
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #4d94ff, 0 0 40px #4d94ff, 0 0 50px #4d94ff, 0 0 60px #121f97, 0 0 70px #121f97, 0 0 80px #121f97;
-  }
-}
-
- 
-.filler{
-  min-height: 75vh;
-  /* background: linear-gradient(0deg, #060702 0%, #070803 5%, rgba(24, 49, 72, 0.7) 15%, rgba(24, 49, 72, 0.2) 30%, rgba(24, 49, 72, 0) 50%); */
-
-
-}
-
- 
-
-  .bg {
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     overflow-y: scroll;
-  }
-  
-  .board-row:after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  
-  .status {
-    margin-bottom: 10px;
-  }
-  
-  .square {
+}
+
+button.square {
+    color: white;
+    font-size: 60px;
+    border-radius: 20px;
+    border-width: thick;
+    background-color: black;
+}
+
+.square {
+    color: #fff;
+    -webkit-animation: square 1s ease-in-out infinite alternate;
+    -moz-animation: square 1s ease-in-out infinite alternate;
+    animation: square 1s ease-in-out infinite alternate;
     border: 1px solid #999;
     float: left;
     font-size: 28pt;
@@ -70,35 +26,64 @@ button.square {
     margin-top: -1px;
     padding: 0;
     text-align: center;
-    width: 20vh;
-    height: 20vh;
-  
-  } 
-  
-  .square:focus {
+    width: 170px;
+    height: 170px;
+}
+
+@keyframes square {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1336a8, 0 0 40px #1336a8, 0 0 50px #1336a8, 0 0 60px #1336a8, 0 0 70px #1336a8;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #4d94ff, 0 0 40px #4d94ff, 0 0 50px #4d94ff, 0 0 60px #121f97, 0 0 70px #121f97, 0 0 80px #121f97;
+    }
+}
+
+.filler {
+    min-height: 75vh;
+    /* background: linear-gradient(0deg, #060702 0%, #070803 5%, rgba(24, 49, 72, 0.7) 15%, rgba(24, 49, 72, 0.2) 30%, rgba(24, 49, 72, 0) 50%); */
+}
+
+.bg {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: scroll;
+}
+
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.status {
+    margin-bottom: 10px;
+}
+
+.square:focus {
     outline: none;
-  }
- 
+}
 
-
-  .kbd-navigation .square:focus {
+.kbd-navigation .square:focus {
     background: #ddd;
-  }
-  
-  
+}
+
 body {
-  margin: 0;
-  background-color: black;
+    margin: 0;
+    background-color: black;
 }
 
 .star {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  background-color: white;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background-color: white;
 }
 
 /* Set the animation, color, size and hide the text */
+
 .intro {
     top: 30%;
     z-index: 1;
@@ -108,7 +93,7 @@ body {
     font-weight: lighter;
     opacity: 0;
     min-height: 50vh;
-    margin-left:10%;
+    margin-left: 10%;
 }
 
 @keyframes intro {
@@ -126,32 +111,33 @@ body {
     }
 }
 
-
 /* Set the animation & hide the logo */
-.logo {    
-  position: absolute;
-  top: 20%;
-  left: 45%;
-  z-index: 1;
-  margin: auto;
-  animation: logo 30s ease-out ;
-  opacity: 0;
+
+.logo {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    z-index: 1;
+    margin: auto;
+    animation: logo 30s ease-out;
+    opacity: 0;
 }
 
 .logo svg {
-  width: inherit;
+    width: inherit;
 }
 
 /* Scale the logo down and maintain it centered */
+
 @keyframes logo {
     0% {
-        width: 18em;        
+        width: 18em;
         transform: scale(2.75);
         opacity: 1;
     }
     50% {
         opacity: 1;
-        width: 18em;      
+        width: 18em;
     }
     100% {
         opacity: 0;
@@ -160,49 +146,47 @@ body {
     }
 }
 
-
 p {
-  color: #FFFF82;
+    color: #FFFF82;
 }
 
 /* Set the font, lean the board, position it */
-#board {
-  font-family:" Century Gothic, CenturyGothic, AppleGothic, sans-serif";
-  transform: perspective(300px) rotateX(25deg);
-  transform-origin: 50% 100%;
-  text-align: justify;
-  position: absolute;
-  margin-left: -9em;
-  font-weight: bold;
-  overflow: hidden;
-  font-size: 350%;
-  height: 50em;
-  width: 18em;
-  bottom: 0;
-  left: 50%;
 
+#board {
+    font-family: " Century Gothic, CenturyGothic, AppleGothic, sans-serif";
+    transform: perspective(300px) rotateX(25deg);
+    transform-origin: 50% 100%;
+    text-align: justify;
+    position: absolute;
+    margin-left: -9em;
+    font-weight: bold;
+    overflow: hidden;
+    font-size: 350%;
+    height: 50em;
+    width: 18em;
+    bottom: 0;
+    left: 50%;
 }
 
-#board:after {    
-  position: absolute;
-  content: ' ';
-  bottom: 20%;
-  left: 0;
-  right: 0;
-  top: 0;
- 
+#board:after {
+    position: absolute;
+    content: ' ';
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 
 /* Set the scrolling animation and position it */
+
 #content {
-  animation: scroll 130s linear 3s;
-  position: absolute;
-  top: 100%;
-  
+    animation: scroll 130s linear 3s;
+    position: absolute;
+    top: 100%;
 }
 
 #title, #subtitle {
-  text-align: center;
+    text-align: center;
 }
 
 @keyframes scroll {
@@ -214,98 +198,93 @@ p {
     }
 }
 
-
 .starwarsImg {
-  margin-left: 32%;
-  max-width: 35%;
-  max-height: 35%;
-  /* transition-delay: 12s;
-  animation: logo1 5s ease-out 151s; */
- 
+    margin-left: 32%;
+    max-width: 35%;
+    max-height: 35%;
+    /* transition-delay: 12s;
+animation: logo1 5s ease-out 151s; */
 }
 
- 
 @keyframes logo1 {
-  0% {
-      transform: scale(1.5); opacity:1 
-  }
-  50% {
-      opacity: 1;
-  }
-  100%{
-    transform: scale(0.1); opacity:0 ;
-  }
+    0% {
+        transform: scale(1.5);
+        opacity: 1
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
 }
 
 .center {
-  display:flex;
-  justify-content:center;
-  margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
 }
 
-
 .redGlow {
-  font-size: 38pt;
-  color: #fff;
-  -webkit-animation:redGlow 1s ease-in-out infinite alternate;
-  -moz-animation: redGlow 1s ease-in-out infinite alternate;
-  animation:  redGlow 1s ease-in-out infinite alternate;
+    font-size: 38pt;
+    color: #fff;
+    -webkit-animation: redGlow 1s ease-in-out infinite alternate;
+    -moz-animation: redGlow 1s ease-in-out infinite alternate;
+    animation: redGlow 1s ease-in-out infinite alternate;
 }
 
 @keyframes redGlow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
 }
 
-.glow{
-  width: 500px;
- }
-
-.status{
-  padding-left: 7%;
+.glow {
+    width: 510px;
 }
 
- .yoda{
+.status {
+    padding-left: 7%;
+}
 
+.yoda {
     position: fixed;
     bottom: 0;
     right: 0;
     height: 30%;
     width: 25%;
- }
-
- .starwarsImg{
-  padding-top: 10px;
-  
- }
- .restart{
-  color: white;
- 
- }
-
- .yellowGlow {
-  font-size: 38pt;
-  color: #fff;
-  -webkit-animation: yellowGlow 1s ease-in-out infinite alternate;
-  -moz-animation: yellowGlow ease-in-out infinite alternate;
-  animation:  yellowGlow ease-in-out infinite alternate;
 }
+
+.starwarsImg {
+    padding-top: 10px;
+}
+
+.restart {
+    color: white;
+}
+
+.yellowGlow {
+    font-size: 38pt;
+    color: #fff;
+    -webkit-animation: yellowGlow 1s ease-in-out infinite alternate;
+    -moz-animation: yellowGlow ease-in-out infinite alternate;
+    animation: yellowGlow ease-in-out infinite alternate;
+}
+
 @keyframes yellowGlow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffed4d, 0 0 40px #ffed4d, 0 0 50px #ffed4d, 0 0 60px #ffed4d, 0 0 70px #ffed4d;
-  }
-  
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ffed4d, 0 0 40px #e7d468, 0 0 50px #e7d468, 0 0 60px #e7d468, 0 0 70px #e7d468, 0 0 80px #e7d468;
-  }
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffed4d, 0 0 40px #ffed4d, 0 0 50px #ffed4d, 0 0 60px #ffed4d, 0 0 70px #ffed4d;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ffed4d, 0 0 40px #e7d468, 0 0 50px #e7d468, 0 0 60px #e7d468, 0 0 70px #e7d468, 0 0 80px #e7d468;
+    }
 }
 
-.start{
-  position: relative;
-  z-index: 1; 
+.start {
+    position: relative;
+    z-index: 1;
 }
