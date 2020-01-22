@@ -1,26 +1,51 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
+import Intro from './components/Intro.js';
+import Game from './components/Game.js';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+class App extends Component {
+
+
+
+    render() {
+        return (
+            <div clasName="App">
+                <div className="pic" style={{
+                    background: `url("${process.env.PUBLIC_URL + '/img/stars.jpeg'}") no-repeat center /cover `
+                }} >
+                    <img className="starwarsImg" Src={process.env.PUBLIC_URL + "/img/starwars.png"} />
+                    <div className=" center ">
+                        <a href="#game" className="btn btn-lg btn-outline-warning "> Click to play </a>
+                    </div>
+                    <Container className="filler h-100 align-items-center ">
+                        <Intro />
+                    </Container>
+                </div>
+                <div className="ml-5 game" style={{
+                    background: `url("${process.env.PUBLIC_URL + '/img/background.jpg'}") no-repeat center / cover`
+                }}>
+
+                    <section className="gameSection h-100 w-100 align-items-center " id="game">
+
+                        <Container className="filler h-100 w-100  justify-content-start">
+                            <Game />
+                        </Container>
+
+                    </section>
+                    <footer>
+                        <img className="yoda" Src={process.env.PUBLIC_URL + "/img/babyyoda.png"} />
+                    </footer>
+                </div>
+
+            </div>
+        )
+    }
 }
 
 export default App;
