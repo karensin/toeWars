@@ -170,6 +170,7 @@ p {
     max-width: 1080px;
     bottom: 0;
     left: 0;
+    /* background-color: green; */
     right: 0;
     /* top: 0; */
     margin-left: auto;
@@ -261,7 +262,6 @@ p {
     position: fixed;
     bottom: 0;
     right: 0;
-    height: 30%;
     width: 25%;
 }
 
