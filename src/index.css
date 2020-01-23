@@ -269,8 +269,21 @@ p {
     padding-top: 10px;
 }
 
-.restart {
-    color: white;
+ .starwarsImg{
+  padding-top: 10px;
+ }
+
+ .restart{
+  color: white;
+
+ }
+
+ .yellowGlow {
+  font-size: 38pt;
+  color: rgba(255, 255, 255, 0.788);
+  -webkit-animation: yellowGlow 1s ease-in-out infinite alternate;
+  -moz-animation: yellowGlow ease-in-out infinite alternate;
+  animation:  yellowGlow ease-in-out infinite alternate;
 }
 
 .yellowGlow {
@@ -283,11 +296,31 @@ p {
 
 @keyframes yellowGlow {
   from {
+    text-shadow: 0 0 10px rgb(136, 153, 42), 0 0 20px rgb(131, 129, 43), 0 0 30px #c2b433, 0 0 40px #c2b433, 0 0 50px #c2b433, 0 0 60px #c2b433, 0 0 70px #ffed4d;
+  }
+  
+  to {
+    text-shadow: 0 0 20px rgb(58, 199, 22), 0 0 30px #c2b433, 0 0 40px #e7d468, 0 0 50px #665a17, 0 0 60px #9c8b34, 0 0 70px #c2b433, 0 0 80px #e7d468;
+  }
+}
+
+
+
+.yellowGlow {
+  font-size: 38pt;
+  color: #fff;
+  -webkit-animation:yellowGlow 1s ease-in-out infinite alternate;
+  -moz-animation: yellowGlow 1s ease-in-out infinite alternate;
+  animation:  yellowGlow 1s ease-in-out infinite alternate;
+}
+
+@keyframes yellowGlow {
+  from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffed4d, 0 0 40px #ffed4d, 0 0 50px #ffed4d, 0 0 60px #ffed4d, 0 0 70px #ffed4d;
   }
   
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ffed4d, 0 0 40px #e7d468, 0 0 50px #e7d468, 0 0 60px #e7d468, 0 0 70px #e7d468, 0 0 80px #e7d468;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ffed4d, 0 0 40px #ffed4d, 0 0 50px #ffed4d, 0 0 60px #ffed4d, 0 0 70px #ffed4d, 0 0 80px #ffed4d;
   }
 }
 
@@ -295,20 +328,14 @@ p {
   position: relative;
   z-index: 1; 
 }
-
-.restart{
-  opacity: 0.8;
-
-  transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  
-   -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
-
-   animation: blink 3s linear infinite;
-   color: #369928;
-   border-radius: 10px ;
-   border: 1px #369928 solid; 
+ 
+.restart {
+  animation: blink 3s linear infinite;
+  color: #369928;
+  border-radius: 10px ;
+  border: 1px #369928 solid; 
+  width: 500px;
+  height: 50px;
 }
 
 @keyframes blink {

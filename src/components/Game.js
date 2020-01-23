@@ -79,7 +79,7 @@ class Game extends Component {
 
         return (
             <div >
-                <button className="btn restart ywGlow justify-content-end" size="lg" onClick={this.handleBoardRestart}>Start new game</button>
+                <button className="btn restart ywGlow justify-content-end" onClick={this.handleBoardRestart}>Start new game</button>
                 <div className="yellowGlow status pr-4" >{status}
                 </div>
                 <main className="game-board">
