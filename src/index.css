@@ -41,6 +41,7 @@ button.square {
 
 .filler {
     min-height: 75vh;
+    max-width: 1080px;
     /* background: linear-gradient(0deg, #060702 0%, #070803 5%, rgba(24, 49, 72, 0.7) 15%, rgba(24, 49, 72, 0.2) 30%, rgba(24, 49, 72, 0) 50%); */
 }
 
@@ -93,7 +94,11 @@ body {
     font-weight: lighter;
     opacity: 0;
     min-height: 50vh;
-    margin-left: 10%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @keyframes intro {
@@ -162,11 +167,16 @@ p {
     overflow: hidden;
     font-size: 350%;
     height: 50em;
-    width: 18em;
     width: 100%;
+    max-width: 1080px;
+    /* width: 80vw; */
+    /* margin-top: 50px; */
     bottom: 0;
     left: 0;
-    /* left: 50%; */
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: green;
 }
 
 #board:after {

@@ -4,15 +4,9 @@ import './index.css';
 import Intro from './components/Intro.js';
 import Game from './components/Game.js';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col'
-
 
 
 class App extends Component {
-
-
-
     render() {
         return (
             <div clasName="App">
@@ -23,20 +17,17 @@ class App extends Component {
                     <div className=" center ">
                         <a href="#game" className="start btn btn-lg btn-outline-warning "> Click to play </a>
                     </div>
-                    <Container className="filler h-100 align-items-center ">
+                    <Container className="filler position-relative h-100 align-items-center ">
                         <Intro />
                     </Container>
                 </div>
                 <div className="ml-5 game" style={{
                     background: `url("${process.env.PUBLIC_URL + '/img/background.jpg'}") no-repeat center / cover`
                 }}>
-
                     <section className="gameSection align-items-center " id="game">
-
                         <Container className="filler h-100 w-100  justify-content-start">
                             <Game />
                         </Container>
-
                     </section>
                     <footer>
                         <img className="yoda" Src={process.env.PUBLIC_URL + "/img/babyyoda.png"} />
