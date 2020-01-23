@@ -3,6 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css';
 import Square from './Square.js';
 import Container from 'react-bootstrap/Container';
+import Game from './Game.js';
+
+
 class Board extends Component {
     renderSquare(i) {
         return (
@@ -15,7 +18,7 @@ class Board extends Component {
 
     render() {
         return (
-            <Container className="filler h-100 align-items-end" >
+            <Container className="filler " >
 
                 <div className="glow " >
                     <div className="board-row ">
@@ -34,7 +37,7 @@ class Board extends Component {
                         {this.renderSquare(8)}
                     </div>
                 </div>
-
+                <button className="btn restart" onClick={() => this.props.onClick2()}>Restart Game</button>
             </Container>
         );
     }

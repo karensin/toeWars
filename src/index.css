@@ -327,6 +327,7 @@ p {
 .start{
   position: relative;
   z-index: 1; 
+  margin-bottom: 50px;
 }
  
 .restart {
@@ -334,8 +335,9 @@ p {
   color: #369928;
   border-radius: 10px ;
   border: 1px #369928 solid; 
-  width: 500px;
+  width: 510px;
   height: 50px;
+  margin-top: 10px;
 }
 
 @keyframes blink {

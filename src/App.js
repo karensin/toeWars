@@ -25,7 +25,7 @@ class App extends Component {
                     background: `url("${process.env.PUBLIC_URL + '/img/background.jpg'}") no-repeat center / cover`
                 }}>
                     <section className="gameSection align-items-center " id="game">
-                        <Container className="filler h-100 w-100  justify-content-start">
+                        <Container className="filler justify-content-start">
                             <Game />
                         </Container>
                     </section>
