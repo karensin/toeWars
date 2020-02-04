@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "59bad6436757ecef3b4aa4f203a0c1b1",
+    "revision": "887baef5757b63db317c94acd4e029c3",
     "url": "/toeWars/index.html"
   },
   {

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/toeWars/precache-manifest.b516a5b820fd758e54b5f252fb54ec3d.js"
+  "/toeWars/precache-manifest.28515af04c46471ccbd683c29a557588.js"
 );
 
 self.addEventListener('message', (event) => {
