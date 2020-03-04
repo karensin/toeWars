@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "887baef5757b63db317c94acd4e029c3",
+    "revision": "dba7b5dfbe8e80aaa4cf47d2c5a016a3",
     "url": "/toeWars/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/toeWars/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "83dc5ea5548a35340abd",
+    "revision": "235950c8760a808c245d",
     "url": "/toeWars/static/css/main.007ba056.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/toeWars/static/js/2.67375a8c.chunk.js.LICENSE"
   },
   {
-    "revision": "83dc5ea5548a35340abd",
-    "url": "/toeWars/static/js/main.0955d8ab.chunk.js"
+    "revision": "235950c8760a808c245d",
+    "url": "/toeWars/static/js/main.7f5977ee.chunk.js"
   },
   {
     "revision": "565ab6a86c5f1e8dabec",
