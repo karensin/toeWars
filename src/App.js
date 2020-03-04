@@ -13,7 +13,7 @@ class App extends Component {
                 <div className="pic" style={{
                     background: `url("${process.env.PUBLIC_URL + '/img/stars.jpeg'}") no-repeat center /cover `
                 }} >
-                    <img className="starwarsImg" Src={process.env.PUBLIC_URL + "/img/starwars.png"} />
+                    <img className="starwarsImg" Src={process.env.PUBLIC_URL + "/img/title.png"} />
                     <div className=" center ">
                         <a href="#game" className="start btn btn-lg btn-outline-warning "> Click to play </a>
                     </div>
